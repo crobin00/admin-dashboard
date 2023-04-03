@@ -13,13 +13,13 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 15% 85%;
+  grid-template-rows: 1fr 4fr;
   grid-auto-flow: column;
 }
 
 .sidebar {
   grid-row: span 2;
-  background-color: #93c5fd;
+  background-color: #357dcf;
   padding: 0.8rem;
   color: white;
   display: grid;
@@ -62,4 +62,209 @@ body {
 
 .nav-item h4 {
   margin-left: 35px;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-gap: 0.3rem;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  box-shadow: 1px 2px 5px rgb(193, 193, 193);
+
+}
+
+.upper-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search {
+  display: flex;
+}
+
+.search svg {
+  margin-right: 20px;
+}
+
+.search input {
+  width: 600px;
+  background-color: #e2e8f0;
+  border: none;
+  border-radius: 30px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info img {
+  border-radius: 50%;
+  margin-left: 25px;
+}
+
+.user-info h5 {
+  font-size: 1.2rem;
+  margin-left: 25px;
+}
+
+.lower-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+}
+
+.greeting img {
+  margin-right: 25px;
+  border-radius: 50%;
+}
+
+.greeting h6 {
+  font-size: 0.8rem;
+  margin-bottom: 2px;
+}
+
+.greeting h3 {
+  font-size: 1.5rem;
+}
+
+.buttons button {
+  background-color: #357dcf;; 
+  color: white;
+  width: 30px;
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 25px;
+  margin-left: 25px;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  grid-template-rows: auto 1fr auto 1fr;
+  background-color: #e2e8f0;
+  padding: 25px 25px 40px 25px;
+  row-gap: 10px;
+  column-gap: 20px;
+}
+
+.main-content > h5 {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.main-content > h5:last-of-type {
+  grid-row: 3;
+  grid-column: 2;
+  margin-top: 1rem;
+}
+
+.projects {
+  display: grid;
+  grid-row: span 3;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 1.5rem 1rem;
+  border-radius: 5px;
+  border-left: 7px solid #fb923c;
+  box-shadow: 1px 2px 5px rgb(193, 193, 193);
+}
+
+.card h5 {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.card p {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.card .icons {
+  justify-self: end;
+}
+
+.card .icons svg {
+  margin-left: 15px;
+}
+
+.announcements {
+  background-color: white;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+  padding: 1rem 1rem;
+  border-radius: 5px;
+}
+
+.announcement {
+  border-bottom: 1px solid rgb(223, 194, 194);
+  padding: 1rem 0;
+}
+
+.announcement:first-child {
+  padding-top: 0;
+}
+
+.announcement:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.announcement h5 {
+  font-weight: 500;
+}
+
+.announcement p {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.trending {
+  background-color: white;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  padding: 1rem 1rem;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 1px 2px 5px rgb(193, 193, 193);
+}
+
+.profile {
+  display: flex;
+}
+
+.profile div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile img {
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.profile > div p:first-of-type {
+  margin-bottom: 3px;
+}
+
+.profile > div p:last-of-type {
+  font-size: 0.8rem;
+  font-weight: 300;
 }
