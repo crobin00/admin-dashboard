@@ -1,0 +1,65 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 15% 85%;
+  grid-auto-flow: column;
+}
+
+.sidebar {
+  grid-row: span 2;
+  background-color: #93c5fd;
+  padding: 0.8rem;
+  color: white;
+  display: grid;
+  align-content: start;
+  row-gap: 4.5rem;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+}
+
+.branding svg {
+  fill: white;
+}
+
+.branding h1 {
+  display: inline;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+.navigation, .help {
+  display: grid;
+  grid-gap: 1.2rem;
+  margin-left: 1.2rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: end;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.nav-item svg {
+  fill: white;
+}
+
+.nav-item h4 {
+  margin-left: 35px;
+}
